@@ -65,14 +65,14 @@ New Features
 - Add :attr:`Guild.approximate_presence_count`
 - Add :attr:`Guild.approximate_member_count`
 - Add :meth:`Client.try_user`
-- Add :meth:`~ext.commands.Bot.try_owners`
-- Add :meth:`~ext.commands.Bot.populate_owners`
+- |commands| Add :meth:`Bot.try_owners <.ext.commands.Bot.try_owners>`
+- |commands| Add :meth:`Bot.populate_owners <.ext.commands.Bot.populate_owners>`
 - Add support for slash command in ext.commands
-    - Add :meth:`~ext.commands.Bot.process_slash_commands`
-    - Add :meth:`~ext.commands.Context.author_permissions`
-    - Add ephemeral kwarg to :meth:`~ext.commands.Context.send` for slash commands only
+    - |commands| Add :meth:`Bot.process_slash_commands <.ext.commands.Bot.process_slash_commands>`
+    - |commands| Add :meth:`Context.author_permissions <.ext.commands.Context.author_permissions`
+    - |commands| Add ephemeral kwarg to :meth:`Context.send <.ext.commands.Context.send>` for slash commands only
+    - |commands| Add :meth:`Context.defer <.ext.commands.Context.defer>`
     - Add :class:`~ext.commands.Option`
-    - Add :meth:`~ext.commands.Context.defer`
 - Add ``delete_after`` kwarg to Interaction responses
 - Update permissions
     - Add :attr:`Permissions.start_embedded_activities`
