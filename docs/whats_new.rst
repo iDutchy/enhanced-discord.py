@@ -44,8 +44,6 @@ New Features
     - Add :attr:`Guild.humans`
     - Add :attr:`TextChannel.bots`
     - Add :attr:`TextChannel.humans`
-- Add :meth:`Thread.fetch_member`
-- Add :meth:`Thread.get_member`
 - Add :meth:`Thread.archive`
 - Added new colours
     - Add :meth:`Colour.dark_blurple`
@@ -55,19 +53,15 @@ New Features
 - Add support for :attr:`Role.icon` in :meth:`Role.edit`
 - Add :attr:`File.description`
 - Add support for editing files in :meth:`Message.edit`
-- Add support for int() to all objects with an id attribute which will return the id
-- Add support for str() to :class:`Message` returning the :attr:`Message.content`
-- Add silent kwarg to :meth:`Message.delete`
+- Add support for ``int()`` to all objects with an id attribute which will return the ``.id``
+- Add support for ``str()`` to :class:`Message` returning the :attr:`Message.content`
+- Add ``silent`` kwarg to :meth:`Message.delete`
 - Added support for timeout
     - Add :attr:`Guild.timed_out_members`
     - Add :attr:`Member.timed_out`
     - Add timeout_until kwarg to :meth:`Member.edit`
-- Added support for :class:`WelcomeScreen`
-    - Add :meth:`Guild.welcome_screen`
-    - Add :meth:`Guild.edit_welcome_screen`
-    - Add :class:`WelcomeChannel`
 - Add :meth:`Guild.try_member`
-- Add with_counts kwarg to :meth:`Client.fetch_guild`
+- Add ``with_counts`` kwarg to :meth:`Client.fetch_guild`
 - Add :attr:`Guild.approximate_presence_count`
 - Add :attr:`Guild.approximate_member_count`
 - Add :meth:`Client.try_user`
@@ -78,18 +72,15 @@ New Features
     - Add :meth:`~ext.commands.Context.author_permissions`
     - Add ephemeral kwarg to :meth:`~ext.commands.Context.send` for slash commands only
     - Add :class:`~ext.commands.Option`
-    - Add :attr:`~ext.commands.Context.interaction`
     - Add :meth:`~ext.commands.Context.defer`
-    - Add :class:`~ext.commands.ApplicationCommandRegistrationError`
-- Add :meth:`Interaction.autocomplete_result`
-- Add delete_after kwarg to Interaction responses
+- Add ``delete_after`` kwarg to Interaction responses
 - Update permissions
     - Add :attr:`Permissions.start_embedded_activities`
     - Add :attr:`Permissions.admin` as alias to :attr:`Permissions.administrator`
     - Add :attr:`Permissions.moderate_members`
 
 - Images and thumbnails of an :class:`Embed` can now be set through their property :attr:`Embed.image` / :attr:`Embed.thumbnail`
-- static_format is now preferred over format in an :class:`Asset`
+- ``static_format`` is now preferred over ``format`` in an :class:`Asset`
 
 
 v2.0.0 - Before enhanced-discord.py
